@@ -7,6 +7,5 @@ while read -r pcent target; do
   used=${pcent%\%}
   if [ "$used" -ge "$THRESHOLD" ]; then
     logger -t check_disk "$target is ${used}% full"
-    logger -t check_disk "$target is ${used}% full"
   fi
 done
